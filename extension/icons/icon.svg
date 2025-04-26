@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" />
+      <stop offset="100%" stop-color="#34A853" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#FFFFFF" />
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="url(#gradient)" />
+  <g fill="#FFFFFF">
+    <!-- Image icon -->
+    <rect x="24" y="32" width="48" height="40" rx="4" stroke="#FFFFFF" stroke-width="4" fill="none" />
+    <circle cx="36" cy="44" r="6" />
+    <path d="M24 60 L40 48 L52 56 L72 40" stroke="#FFFFFF" stroke-width="4" fill="none" />
+    
+    <!-- Text and sound waves -->
+    <rect x="32" y="80" width="64" height="4" rx="2" />
+    <rect x="32" y="88" width="48" height="4" rx="2" />
+    <rect x="32" y="96" width="56" height="4" rx="2" />
+    
+    <!-- Sound waves -->
+    <path d="M84 64 A12 12 0 0 1 84 96" stroke="#FFFFFF" stroke-width="4" fill="none" />
+    <path d="M92 56 A24 24 0 0 1 92 104" stroke="#FFFFFF" stroke-width="4" fill="none" />
+    <path d="M100 48 A36 36 0 0 1 100 112" stroke="#FFFFFF" stroke-width="4" fill="none" />
+  </g>
+</svg>

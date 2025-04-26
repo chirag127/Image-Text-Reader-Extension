@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Text Reader - Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Image Text Reader</h1>
+      <h2>Options</h2>
+    </header>
+
+    <main>
+      <section class="card" id="api-key-section">
+        <h3>Gemini API Key</h3>
+        <p class="description">
+          To use this extension, you need a Gemini API key from Google AI Studio.
+        </p>
+        <div class="form-group">
+          <label for="api-key-input">API Key:</label>
+          <div class="input-with-button">
+            <input type="password" id="api-key-input" placeholder="Enter your Gemini API key">
+            <button id="toggle-api-key" class="icon-button" title="Show/Hide API Key">👁️</button>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button id="save-api-key" class="primary-btn">Save API Key</button>
+          <a href="https://aistudio.google.com/app/apikey" target="_blank" class="link-btn">Get API Key</a>
+        </div>
+        <div id="api-key-status" class="status-message"></div>
+      </section>
+
+      <section class="card" id="reading-settings-section">
+        <h3>Reading Settings</h3>
+        <div class="form-group">
+          <label for="default-speed">Default Reading Speed:</label>
+          <select id="default-speed">
+            <option value="0.5">0.5x (Slow)</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x (Normal)</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x (Fast)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="default-voice">Default Voice:</label>
+          <select id="default-voice">
+            <option value="">Default System Voice</option>
+            <!-- Will be populated with available voices via JavaScript -->
+          </select>
+        </div>
+        <div class="form-actions">
+          <button id="save-reading-settings" class="primary-btn">Save Settings</button>
+          <button id="test-voice" class="secondary-btn">Test Voice</button>
+        </div>
+        <div id="reading-settings-status" class="status-message"></div>
+      </section>
+
+      <section class="card" id="history-section">
+        <h3>Reading History</h3>
+        <div class="history-controls">
+          <button id="clear-history" class="danger-btn">Clear History</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <div class="empty-history">No history entries yet.</div>
+          <!-- Will be populated with history entries via JavaScript -->
+        </div>
+      </section>
+
+      <section class="card" id="reset-section">
+        <h3>Reset Preferences</h3>
+        <p class="description">
+          This will reset all settings to their default values and clear your history.
+        </p>
+        <button id="reset-all" class="danger-btn">Reset All Preferences</button>
+        <div id="reset-status" class="status-message"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Image Text Reader Extension v1.0.0</p>
+    </footer>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

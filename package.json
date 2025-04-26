@@ -1,0 +1,13 @@
+{
+  "name": "image-text-reader-extension",
+  "version": "1.0.0",
+  "description": "Extract and read aloud text from images on webpages using Gemini AI",
+  "scripts": {
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "author": "Chirag Singhal",
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.32.1"
+  }
+}
